@@ -17,5 +17,5 @@ class Order(BaseModel):
 def calculate_total(order: Order):
     total = 0
     for item in order.items:
-        total += item.price * item.quanity  # bug: should be quantity
+        total += item.price * item.quantity
     return {"total": total}
