@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import tracefix
 
 app = FastAPI()
-tracefix.init(api_key="YOUR_API_KEY", project_id="YOUR_PROJECT_ID")
+tracefix.init(api_key="key_03db6224", project_id="proj_086c97b7")
 
 class OrderItem(BaseModel):
     name: str
